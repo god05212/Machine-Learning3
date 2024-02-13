@@ -49,11 +49,21 @@ Heart Attack Analysis & Prediction Dataset: A dataset for heart attack classific
 - 
 <br/>
 
-## 모델의 
+## 모델의 test dataset에 대한 accuracy (소숫점 다섯 째 자리에서 반올림) 
+| Model | accuracy |
+|:----------------------------------------|:-------|
+| Support Vector Machines                 | 0.8689 |
+| Hyperparameter tuning of SVC            | 0.9016 |
+| Logistic Regression                     | 0.9016 |
+| Decision Tree                           | 0.7869 |
+| Random Forest                           | 0.7869 |
+| Gradient Boosting Classifier            | 0.8689 |
 <br/>
 
 ## 최종 모델
-
+Logistic Regression
+- test dataset에 대한 결과
+  - accuracy: 약 0.9016
 <br/>
 
 ## 결론
