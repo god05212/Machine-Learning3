@@ -46,6 +46,12 @@ Heart Attack Analysis & Prediction Dataset: A dataset for heart attack classific
 <br/>
 
 ## 프로젝트 수행 과정
+- pandas의 read_csv 함수를 사용하여 로드한 후 데이터셋의 크기를 확인하고, 상위 5개 행을 확인하여 데이터의 구조를 파악하였습니다.
+- 각 열의 고유한 값 개수를 확인하여 범주형(categorical)과 연속형(continuous) 열을 분리하였습니다.
+- 'df[con_cols].describe()'를 통해 연속형 열에 대한 요약 통계량을 확인하여 데이터의 분포와 기초 통계량을 파악합니다.
+- 'df.isnull().sum()'으로 결측값이 없는 것을 확인하였습니다.
+- EDA의 일환으로, 단일 변수에 대해 분석하고 시각화하였습니다.
+- matplotlib과 seaborn 라이브러리를 사용하여 범주형 변수에 대한 Count plot을 생성하였고, 각 변수의 카테고리별 빈도수를 시각화하여 데이터의 분포를 확인하였습니다. 이와 같은 시각화를 통해 각 변수의 분포를 확인하고 데이터의 특성을 파악하였습니다.
 - 
 <br/>
 
