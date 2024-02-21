@@ -63,11 +63,8 @@ Heart Attack Analysis & Prediction Dataset: A dataset for heart attack classific
     - df.isnull().sum()을 사용하여 결측값이 있는지 확인합니다. 여기서는 결측값이 없다고 확인되었습니다.
   
 
-5. 범주형 변수에 대한 Count plot 생성
+5. 범주형 변수에 대한 Count plot, 연속형 변수에 대한 box plot 과 타겟 변수에 대한 Count plot 생성
     - matplotlib과 seaborn 라이브러리를 사용하여 범주형 변수에 대한 Count plot을 생성합니다. 이를 통해 각 변수의 카테고리별 빈도수를 시각화하여 데이터의 분포를 확인합니다.
-  
-
-6. 연속형 변수에 대한 box plot 과 타겟 변수에 대한 Count plot 생성
     - 선택한 연속형 변수를 기준으로 box plot을 그려 분포와 이상치를 시각적으로 파악합니다.
     - 타겟 변수에 대한 Count plot을 생성하여 시각화합니다.
   
