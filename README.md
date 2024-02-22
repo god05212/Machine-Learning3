@@ -111,7 +111,7 @@ Heart Attack Analysis & Prediction Dataset: A dataset for heart attack classific
     - 모델 객체를 생성한 후 .fit(X_train, y_train)를 사용하여 모델을 학습시키고, .predict(X_test)를 사용하여 테스트 데이터에 대한 예측값을 계산한 후, accuracy_score(y_test, y_pred)를 통해 예측 결과의 정확도를 출력하며 각 모델의 학습과 예측 과정을 수행하고, 테스트 데이터에 대한 정확도를 확인하였습니다.
 <br/>
 
-## 모델의 test dataset에 대한 accuracy (소숫점 다섯 째 자리에서 반올림) 
+## 모델의 test dataset에 대한 accuracy (소수점 다섯째 자리에서 반올림) 
 | Model | accuracy |
 |:----------------------------------------|:-------|
 | Support Vector Machines                 | 0.8689 |
