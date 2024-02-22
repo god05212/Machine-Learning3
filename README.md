@@ -148,3 +148,7 @@ Logistic Regression
 EDA 결과를 종합하면 심장마비 위험과 관련된 여러 변수들이 있음을 알 수 있습니다. 성별, 협심증 여부, 혈관 상태 등이 심장마비 위험에 영향을 미친다는 것을 확인할 수 있습니다. 특히, 최대 심박수(thalachh)와 이전 최저 수치(oldpeak)가 심장 발작과 관련된 중요한 변수임을 확인할 수 있습니다. EDA를 통해 이러한 변수들이 심장마비 위험을 예측하는데 중요한 역할을 할 수 있음을 알 수 있으며, 이러한 정보는 심장 질환 예방 및 관리에 도움이 될 수 있습니다.
 
 따라서 추가적인 분석과 모델링을 통해 이러한 변수들을 활용하여 심장 질환 예측 모델을 구축하는 것이 의미있을 것으로 보입니다.
+![스크린샷 2024-02-22 222627](https://github.com/god05212/Machine-Learning3/assets/83646397/0d756842-408b-4adf-81a3-ea58775dfcd9)
+![스크린샷 2024-02-22 222254](https://github.com/god05212/Machine-Learning3/assets/83646397/9c64a1c0-dfe5-489f-aaeb-3a6b7fcc5a31)
+![스크린샷 2024-02-22 222103](https://github.com/god05212/Machine-Learning3/assets/83646397/df911886-97f8-4710-bfb8-3d86e210cd36)
+![스크린샷 2024-02-22 221938](https://github.com/god05212/Machine-Learning3/assets/83646397/ab62aea3-6a1b-4b00-a97b-620e2185bfbd)
