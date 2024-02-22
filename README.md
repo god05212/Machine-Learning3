@@ -100,11 +100,11 @@ Heart Attack Analysis & Prediction Dataset: A dataset for heart attack classific
 13. 분류 모델 학습 및 평가
     - SVM 모델: SVC 클래스를 사용하여 선형 커널을 가진 SVM 모델을 학습시키고, predict 메서드로 테스트 데이터의 예측값을 계산하고, accuracy_score 함수를 활용하여 테스트 정확도를 계산하였습니다.
     - SVM 하이퍼파라미터 튜닝: GridSearchCV를 활용하여 C와 gamma의 여러 조합을 시도하여 최적의 조합을 찾았으며, 최적의 하이퍼파라미터 조합은 searcher.best_params_에서 확인하였습니다. 이를 사용하여 테스트 데이터의 예측값과 실제값을 비교하여 테스트 정확도를 계산하였습니다.
-    - 로지스틱 회귀 분석: LogisticRegression 클래스를 사용하여 모델을 학습시키고, predict_proba 메서드를 사용하여 테스트 데이터의 예측 확률을 계산하였습니다. argmax 함수를 활용하여 가장 높은 확률을 가진 클래스를 선택하여 예측값을 구한 후, 이를 사용하여 테스트 정확도를 계산하였습니다.
+    - 로지스틱 회귀 분석: LogisticRegression 클래스를 사용하여 모델을 학습시키고, predict_proba 메서드를 사용하여 테스트 데이터의 예측을 계산하였습니다. argmax 함수를 활용하여 가장 높은 확률을 가진 클래스를 선택하여 예측값을 구한 후, 이를 사용하여 테스트 정확도를 계산하였습니다.
 
-14. 로지스틱 회귀(Logistic Regression) 모델을 사용한 예측 확률 계산 및 ROC 곡선 그리기
-    - 로지스틱 회귀 모델을 학습시키고 예측 확률 계산하기: logreg.predict_proba(X_test)를 호출하여 예측 확률을 계산하고, [:, 1]을 사용하여 클래스 1에 대한 예측 확률만 선택하였습니다.
-    - ROC 곡선을 그리기 위해 FPR, TPR 및 임계값 계산하기: roc_curve(y_test, y_pred_prob)를 사용하여 실제 클래스 값인 y_test와 클래스 1에 대한 예측 확률인 y_pred_prob를 입력하여 False Positive Rate(FPR), True Positive Rate(TPR) 및 임계값(thresholds)을 계산하였습니다.
+14. 로지스틱 회귀(Logistic Regression) 모델을 사용한 예측 계산 및 ROC 곡선 그리기
+    - 로지스틱 회귀 모델을 학습시키고 예측 계산하기: logreg.predict_proba(X_test)를 호출하여 예측을 계산하고, [:, 1]을 사용하여 클래스 1에 대한 예측만 선택하였습니다.
+    - ROC 곡선을 그리기 위해 FPR, TPR 및 임계값 계산하기: roc_curve(y_test, y_pred_prob)를 사용하여 실제 클래스 값인 y_test와 클래스 1에 대한 예측인 y_pred_prob를 입력하여 False Positive Rate(FPR), True Positive Rate(TPR) 및 임계값(thresholds)을 계산하였습니다.
     - ROC 곡선 그래프 출력하기: plt.plot 함수를 사용하여 ROC 곡선을 그래프로 출력하였으며, 빨간색 선으로 표시하고 "Random"과 "Logistic Regression"을 범례에 표시하였습니다.
 
 15. 의사결정 트리(Decision Tree), 랜덤 포레스트(Random Forest) 및 그래디언트 부스팅(Gradient Boosting) 분류기를 사용한 모델 학습 및 정확도 출력하기
